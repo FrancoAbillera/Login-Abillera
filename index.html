@@ -2,7 +2,7 @@
 1- Usuario
 2- Contraseña
 3- Recaptcha
-4- FireBase
+4- FireBase (auth y db)
 5- Registrar
 6- Reset de Contraseña
 -->
@@ -22,16 +22,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <!--aca va el recaptcha-->
-    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-    async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!--aca va la devolución del recaptcha-->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 
 </head>
 <body>
-    
-    <!-- reCaptcha -->
-    <div class="mb-3">
-        <div class="g-recaptcha" data-sitekey="6LfI1AMsAAAAAEuHngZagwjXnx6vHV4hlmIhpHrQ"></div>
-    </div>
+
+    <!-- reCaptcha Clave de Sitio -->
+
+    <form action="?" method="POST">
+        <div class="g-recaptcha" data-sitekey="6LerxQosAAAAADUalQGm0BqoRk95mQs2VsHhKtXz"></div>
+        <br/>
+        <input type="submit" value="Submit">
+    </form>
 
     <!-- Callback de reCaptcha -->
 
