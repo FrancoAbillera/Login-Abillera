@@ -26,11 +26,10 @@
 
 </head>
 <body>
-
-    <!-- reCaptcha Clave de Sitio -->
-
+    
+    <!-- Formulario Inicio de Sesion -->
+    
     <form id="contactForm" action="?" method="POST" name="contact-form">
-
         <!-- Campo de Usuario -->
         <div class="mb-3">
             <label for="email" class="form-label">Usuario Email</label>
@@ -42,7 +41,11 @@
             <label for="password" class="form-label">Contraseña</label>
             <input type="text" class="form-control" id="password" name="password" required>
         </div>
+    </form>
+    
+    <!-- reCaptcha Clave de Sitio -->
 
+    <form action="?" method="POST">
         <div class="g-recaptcha" data-sitekey="6LerxQosAAAAADUalQGm0BqoRk95mQs2VsHhKtXz"></div>
         <input type="submit" value="Ingresar">
     </form>
