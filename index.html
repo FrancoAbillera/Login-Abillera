@@ -28,20 +28,21 @@
 <body>
     
     <!-- Formulario Inicio de Sesion -->
+    <div class="container mt-5">
+        <form id="contactForm" action="?" method="POST" name="contact-form">
+            <!-- Campo de Usuario -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Usuario Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
     
-    <form id="contactForm" action="?" method="POST" name="contact-form">
-        <!-- Campo de Usuario -->
-        <div class="mb-3">
-            <label for="email" class="form-label">Usuario Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
-        </div>
-
-        <!-- Campo de Contraseña -->
-        <div class="mb-3">
-            <label for="password" class="form-label">Contraseña</label>
-            <input type="text" class="form-control" id="password" name="password" required>
-        </div>
-    </form>
+            <!-- Campo de Contraseña -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="text" class="form-control" id="password" name="password" required>
+            </div>
+        </form>
+    </div>
     
     <!-- reCaptcha Clave de Sitio -->
 
